@@ -421,7 +421,8 @@ li {
     width: 50%;
     border-radius: 10px;
     margin-bottom: 2rem;
-    margin-left: 12.5rem;
+    margin-left: calc((100% - 50%) / 2);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 .work-experience .info {
@@ -482,7 +483,8 @@ li {
     width: 50%;
     border-radius: 10px;
     margin-bottom: 2rem;
-    margin-left: 12.5rem;
+    margin-left: calc((100% - 50%) / 2);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 .self-study .official-education,
@@ -621,7 +623,7 @@ li {
         display: grid;
 
         grid-template-columns: auto;
-        /* grid-template-rows: auto; */
+        grid-template-rows: auto;
         border-radius: var(--radius);
 
         grid-template-areas:
@@ -629,7 +631,7 @@ li {
             "left-content"
             "right-content"
         ;
-
+        
         align-items: center;
         border-radius: none;
     }
