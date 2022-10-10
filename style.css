@@ -478,6 +478,10 @@ strong {
     background: #0bb5f4;
 }
 
+.work-experience li:nth-of-type(3)::after {
+    height: 75px;
+}
+
 /* --------------------------------------------- */
 /* ------------- Education --------------------- */
 /* --------------------------------------------- */
@@ -533,6 +537,10 @@ strong {
     width: 2px;
     height: 61px;
     background: #0bb5f4;
+}
+
+.education :nth-of-type(8)::after {
+    height: 55px;
 }
 
 /* --------------------------------------------- */
