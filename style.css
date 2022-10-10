@@ -237,7 +237,7 @@ a:hover {
     font-family: "droid-serif", serif;
     font-size: 1.5rem;
     color: var(--text-color);
-    margin-bottom: 2rem;
+    margin: 2rem 0 2rem 0;
 }
 
 .resume-skills .skill-category {
@@ -351,6 +351,10 @@ strong {
     color: var(--text-color);
 }
 
+.skill-mobile {
+    display: none;
+}
+
 /* --------------------------------------------- */
 /* ------------ Resume-Socials ----------------- */
 /* --------------------------------------------- */
@@ -375,6 +379,7 @@ strong {
     font-weight: 100;
     font-size: 1.5rem;
 }
+
 
 /* --------------------------------------------- */
 /* --------- Resume right container ------------ */
@@ -612,17 +617,17 @@ strong {
         margin: 0;
 
         display: grid;
-        
+
         grid-template-columns: auto;
         /* grid-template-rows: auto; */
         border-radius: var(--radius);
-        
+
         grid-template-areas:
-        "profile-picture"
-        "left-content"
-        "right-content"
+            "profile-picture"
+            "left-content"
+            "right-content"
         ;
-        
+
         align-items: center;
         /* justify-items: center; */
         border-radius: none;
@@ -641,6 +646,7 @@ strong {
 
     .resume-left {
         width: 100%;
+        min-width: 400px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         display: flex;
@@ -649,7 +655,37 @@ strong {
         align-items: center;
     }
 
-    .resume-left .full-name, .title {
+    .resume-left-content {
+        width: 90vw;
+    }
+
+    .skill-category {
+        display: none;
+    }
+
+    .skill-mobile {
+        display: initial;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .resume-social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume-social-mobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .resume-left .full-name,
+    .title {
         margin-left: 0;
     }
 
