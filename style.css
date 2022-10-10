@@ -3,6 +3,8 @@
     font-size: 62.5%;
     margin: 0;
     padding: 0;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
 }
 
 :root {
@@ -216,101 +218,19 @@ a:hover {
     margin: 2rem 0 2rem 0;
 }
 
-.resume-skills .skill-category {
-    padding-left: 2rem;
+.resume-left .skill-category {
+    display: initial;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.resume-skills .skill-category1 {
-    margin-bottom: 1.5rem;
-}
 
-.resume-skills .skill-category img {
-    margin-bottom: 1rem;
-}
-
-#docker-logo {
-    width: 20rem;
-}
-
-#k8s-logo {
-    width: 20rem;
-}
-
-#linux-logo {
-    width: 5rem;
-    display: inline;
-    margin-right: 2rem;
-}
-
-#bash-logo {
-    width: 13rem;
-    display: inline;
-}
-
-#python-logo {
-    width: 5rem;
-    display: inline;
-    margin-right: 1rem;
-}
-
-#aws-logo {
-    width: 7rem;
-    display: inline;
-    margin-right: 1rem;
-}
-
-#nginx-logo {
-    width: 13rem;
-}
-
-#git-logo-clean {
-    width: 5rem;
-    display: inline;
-    margin-right: 1rem;
-}
-
-#github-logo {
-    width: 4.5rem;
-    display: inline;
-    margin-right: 1rem;
-
-}
-
-#gitlab-logo-clean {
-    width: 5rem;
-}
-
-#cisco-logo {
-    width: 8rem;
-}
-
-#javascript-logo {
+.skill-category img {
     width: 4rem;
-    margin-right: 1rem;
-
-}
-
-#react-logo {
-    width: 4.5rem;
-    margin-right: 0.9rem;
-}
-
-#mongodb-logo {
-    width: 4rem;
-}
-
-#html-logo-clean {
-    width: 4rem;
-    margin-right: 1rem;
-}
-
-#css-logo-clean {
-    width: 4.2rem;
-    margin-right: 1rem;
-}
-
-#sass-logo {
-    width: 6rem;
 }
 
 .resume-skills p {
@@ -421,6 +341,9 @@ li {
     width: 50%;
     border-radius: 10px;
     margin-bottom: 2rem;
+    /* Centering with calc guide: 
+    https: //jbena1996.medium.com/centering-popup-with-css-using-calc-css-function-9a7848ec6e73
+    */
     margin-left: calc((100% - 50%) / 2);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 }
@@ -479,7 +402,8 @@ li {
 /* ------------------------------------------------------------ */
 /* ------------- Self Study & Official Education -------------- */
 /* ------------------------------------------------------------ */
-.self-study-pic, .official-edu-pic {
+.self-study-pic,
+.official-edu-pic {
     width: 50%;
     border-radius: 10px;
     margin-bottom: 2rem;
@@ -631,7 +555,7 @@ li {
             "left-content"
             "right-content"
         ;
-        
+
         align-items: center;
         border-radius: none;
     }
@@ -664,7 +588,7 @@ li {
         width: 100%;
     }
 
-    .skill-category {
+    /* .skill-category {
         display: none;
     }
 
@@ -674,7 +598,7 @@ li {
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 10px;
-    }
+    } */
 
     .resume-social {
         display: flex;

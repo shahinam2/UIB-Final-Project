@@ -6,5 +6,6 @@
 - [x] Create the mobile version
 - [x] Add picture to work experience, self-study & official education
 - [x] Fix centering the work experience, self-study & official education pictures with calc
+- [x] Resize the skills SVG files
 - [] Add the rectangle to the buttom of the profile picture
 - [] Apply DRY
