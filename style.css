@@ -84,14 +84,11 @@ h1 {
 .resume {
     width: 900px;
     margin: 50px auto;
-    /* border: 1px solid; */
 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
     display: grid;
-
     grid-template-columns: 300px 600px;
-    /* grid-template-rows: auto; */
     border-radius: var(--radius);
 
     grid-template-areas:
@@ -101,15 +98,13 @@ h1 {
 }
 
 .resume-left {
-    /* width: 300px; */
     background-color: var(--resume-left);
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
-    /* height: 150vh; */
+    height: 100%;
 }
 
 .profile-picture {
-    /* position: relative; */
     grid-area: profile-picture;
     width: 100%;
     border-top-left-radius: var(--radius);
@@ -119,34 +114,16 @@ h1 {
     display: none;
 }
 
-/* .profile-picture::after {
-    content: "";
-    position: absolute;
-    background: #8d9e78;
-    width: 100%;
-    height: 30px;
-    bottom: -150px;
-    left: 0;
-    transform: skewY(355deg);
-    z-index: -1;
-} */
-
 .full-name {
     grid-area: left-content;
-
     font-family: "vivaldi", sans-serif;
     font-size: 3.5rem;
     color: #F7F0F5;
-    /* margin: 0 auto; */
     margin-top: 1rem;
     margin-left: 2.5rem;
     display: flex;
-    /* justify-content: center; */
+
     align-items: center;
-
-    /* border: 1px solid red; */
-
-    /* display: none; */
 }
 
 .title {
@@ -158,9 +135,7 @@ h1 {
     align-items: center;
     margin-top: 0.1rem;
     margin-left: 3.2rem;
-    /* border: 1px solid; */
 }
-
 
 /* -------------------------------------------- */
 /* -------- Resume content container ---------- */
@@ -394,57 +369,66 @@ strong {
 
 .about-me,
 .work-experience,
-.education,
+.self-study,
+.official-education,
 .hobby {
     padding: 2.5rem 0;
     border-bottom: 2px solid var(--border-bottom-color);
 }
 
-/* --------------------------------------------- */
-/* -------------- About me --------------------- */
-/* --------------------------------------------- */
-.about-me h2 {
+
+.about-me .work-experience .self-study .official-education,
+h2 {
     font-family: "garamond", sans-serif;
     font-size: 4rem;
     padding-bottom: 1rem;
-    /* font-weight: bold; */
 }
 
-.about-me p {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: var(--text2-color);
-}
-
-/* --------------------------------------------- */
-/* ---------- Work Experience ------------------ */
-/* --------------------------------------------- */
-.work-experience h2 {
-    font-family: "garamond", sans-serif;
-    font-size: 4rem;
-    padding-bottom: 1rem;
-    /* font-weight: ; */
-}
-
-.work-experience li {
+.work-experience .self-study .official-education,
+li {
     list-style-type: none;
 }
 
-.work-experience .date {
+.work-experience .self-study .official-education,
+.date {
     font-family: "droid-serif", serif;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: var(--text2-color);
 }
 
+/* The followings are all div elements. */
+.jobname-title,
+.date,
+.about-me-style {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    color: var(--text2-color);
+}
+
+/* --------------------------------------------- */
+/* -------------- About me --------------------- */
+/* --------------------------------------------- */
+
+
+
+
+/* --------------------------------------------- */
+/* ---------- Work Experience ------------------ */
+/* --------------------------------------------- */
+.work-experience .work-exp-pic {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-left: 12.5rem;
+}
+
 .work-experience .info {
     margin-bottom: 1.5rem;
 }
 
-.work-experience .jobname-title {
+.work-experience .info .jobname-title {
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
     font-size: 1.5rem;
     color: var(--text2-color);
 }
@@ -490,43 +474,36 @@ strong {
     height: 75px;
 }
 
-/* --------------------------------------------- */
-/* ------------- Education --------------------- */
-/* --------------------------------------------- */
-.education h2 {
-    font-family: "garamond", sans-serif;
-    font-size: 4rem;
-    padding-bottom: 1rem;
+/* ------------------------------------------------------------ */
+/* ------------- Self Study & Official Education -------------- */
+/* ------------------------------------------------------------ */
+.self-study-pic, .official-edu-pic {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-left: 12.5rem;
 }
 
-.education li {
-    list-style-type: none;
-}
-
-.education .date {
-    font-family: "droid-serif", serif;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--text2-color);
-}
-
-.education .edu-title {
+.self-study .official-education,
+.edu-title {
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
     color: var(--text2-color);
 }
 
-.education ul {
+.self-study .official-education,
+.self-official-ul {
     padding-left: 4rem;
 }
 
-.education li {
+.self-study.official-education,
+li {
     margin-bottom: 1.5rem;
     position: relative;
 }
 
-.education li:before {
+.self-study li:before {
     content: "";
     position: absolute;
     top: 4px;
@@ -537,7 +514,7 @@ strong {
     border: 2px solid #0bb5f4;
 }
 
-.education li:after {
+.self-study li:after {
     content: "";
     position: absolute;
     top: 14px;
@@ -547,7 +524,32 @@ strong {
     background: #0bb5f4;
 }
 
-.education :nth-of-type(8)::after {
+.official-education li:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #0bb5f4;
+}
+
+.official-education li:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 61px;
+    background: #0bb5f4;
+}
+
+.self-study li:nth-of-type(6)::after {
+    height: 55px;
+}
+
+.official-education li:nth-of-type(2)::after {
     height: 55px;
 }
 
@@ -628,9 +630,7 @@ strong {
         ;
 
         align-items: center;
-        /* justify-items: center; */
         border-radius: none;
-
     }
 
     .profile-picture {
