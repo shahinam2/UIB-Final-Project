@@ -167,7 +167,7 @@ h1 {
 /* -------------------------------------------- */
 .resume-left-content {
     grid-area: left-content;
-    /* padding: 0 3rem; */
+    padding: 0 3rem;
 }
 
 /* -------------------------------------------- */
@@ -607,7 +607,7 @@ strong {
 /* --------------------------------------------- */
 @media screen and (min-width: 1px) and (max-width: 899px) {
     .resume {
-        /* all: initial; */
+        all: initial;
         width: 100vw;
         margin: 0;
 
