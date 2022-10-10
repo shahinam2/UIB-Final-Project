@@ -159,12 +159,10 @@ h1 {
     border-bottom: 2px solid var(--border-bottom-color);
 }
 
-.resume-info li {
+.resume-info ul li {
     display: flex;
     align-items: center;
-    /* margin-top: 2rem; */
     margin-bottom: 1rem;
-    /* margin-left: 3rem; */
 }
 
 .fa-solid,
@@ -256,18 +254,30 @@ strong {
 /* --------------------------------------------- */
 .resume-social {
     border-bottom: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-social ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .resume-social li {
-    list-style-type: none;
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
 
 .resume-social h2 {
     font-family: "droid-serif", serif;
     font-size: 2.5rem;
     color: var(--text-color);
-    padding-bottom: 1rem;
+    padding-bottom: 2.5rem;
 }
 
 .resume-social a {
@@ -424,8 +434,12 @@ li {
     padding-left: 4rem;
 }
 
-.self-study.official-education,
-li {
+.self-study li {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.official-education li {
     margin-bottom: 1.5rem;
     position: relative;
 }
@@ -575,7 +589,6 @@ li {
     /* --------------------------------------------- */
     .resume-left {
         width: 100%;
-        /* min-width: 400px; */
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         display: flex;
@@ -586,41 +599,6 @@ li {
 
     .resume-left-content {
         width: 100%;
-    }
-
-    /* .skill-category {
-        display: none;
-    }
-
-    .skill-mobile {
-        display: initial;
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 10px;
-    } */
-
-    .resume-social {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .resume-social-mobile {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 20px;
-    }
-
-    .resume-social-mobile li {
-        display: flex;
-        align-content: center;
-    }
-
-    .resume-left .full-name,
-    .title {
-        margin-left: 0;
     }
 
     /* ---------------------------------------------- */
