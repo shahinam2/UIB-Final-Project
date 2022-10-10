@@ -1,19 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <style>
-        body {
-            background: teal;
-        }
-    </style>
+    <!-- Droid Serif font - Import from Adobe -->
+    <link rel="stylesheet" href="https://use.typekit.net/lol3wen.css">
 
+    <!-- Nunito font - Import from google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;1,200;1,300;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome icon -->
+    <script src="https://kit.fontawesome.com/aec0b85e5d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>My Resume</title>
 </head>
+
 <body>
-    <h1>This is a placeholder for the upcoming UIB final project</h1>
+    <div class="resume">
+        <div class="resume-left">
+            <img class="profile-picture" src="./img/profile-picture.jpg" alt="">
+            <h2 class="full-name">Shahin Hemmati</h2>
+            <p class="title">DevOps Engineer</p>
+
+            <div class="resume-left-content">
+                <div class="resume-info">
+                    <ul>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="data">Borgholzhausen, Germany</div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+                            <div class="data">0049176xxxxxxxx</div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <a href="mailto:shahin.ccie1989@gmail.com">shahin.ccie1989@gmail.com</a>
+
+                        </li>
+                        <li>
+                            <div class="icon"><img class="svg-icon" src="./svg/internet-logo.svg" alt=""></div>
+                            <div class="data"><a href="#">shahinhemmati.com</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume-skills">
+                    <h2>Skills</h2>
+                    <h3>DevOps:</h3>
+                    <div class="skill-category skill-category1">
+                        <div><img id="docker-logo" src="./svg/Docker_logo.svg" alt="docker logo"></div>
+                        <div><img id="k8s-logo" src="./svg/k8s-logo.svg" alt="Kubernetes logo"></div>
+                        <div><img id="linux-logo" src="./svg/linux_logo.svg" alt="linux logo"><img id="bash-logo"
+                                src="./svg/bash-logo.svg" alt="bash script logo"></div>
+                        <div> <img id="python-logo" src="./svg/Python-logo.svg" alt="python logo"> <img id="aws-logo"
+                                src="./svg/AWS_Logo.svg" alt="AWS logo"> <img id="nginx-logo" src="./svg/Nginx_logo.svg"
+                                alt="nginx logo"></div>
+                        <div><img id="git-logo-clean" src="./svg/Git-logo-clean.svg" alt="git logo"> <img
+                                id="github-logo" src="./svg/github-logo.svg" alt="github logo"> <img
+                                id="gitlab-logo-clean" src="./svg/Gitlab-logo-clean.svg" alt="gitlab logo"></div>
+                        <div><img id="cisco-logo" src="./svg/Cisco_logo.svg" alt="cisco logo"></div>
+                    </div>
+                    <h3>Web Development:</h3>
+                    <div class="skill-category">
+                        <div><img id="javascript-logo" src="./svg/JavaScript_logo.svg" alt="javascript logo"> <img
+                                id="react-logo" src="./svg/React-logo.svg" alt="react logo"> <img id="mongodb-logo"
+                                src="./svg/mongodb-logo.svg" alt="mongodb icon"></div>
+                        <div><img id="html-logo-clean" src="./svg/HTML5_Logo_clean.svg" alt="html logo"> <img
+                                id="css-logo-clean" src="./svg/CSS_icon-clean.svg" alt="css logo"> <img id="sass-logo"
+                                src="./svg/Sass_Logo.svg" alt="sass logo"></div>
+                    </div>
+                </div>
+                <div class="resume-social">
+                    <h2>Social</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/shahin-hemmati/">Linkedin</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-twitter"></i>
+                            <a href="https://twitter.com/cl0udfriendly">Twitter</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-medium"></i>
+                            <a href="https://medium.com/@cl0udfriendly">Medium</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="https://www.instagram.com/cl0udfriendly/">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-right">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus odio inventore quod facere
+                    voluptates saepe praesentium debitis quibusdam molestiae dignissimos? Ipsum culpa quo, totam non
+                    possimus ea quam eius ducimus!</p>
+            </div>
+            <div class="work-experience">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>
+                        <div class="date">Oct 2022 - Present</div>
+                        <div class="info">
+                            <p class="jobname-title">Digital Career Institue - Web Development Tutor</p>
+                            <p class="job-des">Helping my classmates by answering their questions or repeating the
+                                topics</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="date">2017 - 2018</div>
+                        <div class="info">
+                            <p class="jobname-title">Rose Gol Mobin (StarChart) -
+                                IT/Network-Administrator/HelpDesk/Proctor</p>
+                            <p class="job-des">Designing, administrating, maintaining & troubleshooting network
+                                solutions.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="date">2021 - 2014</div>
+                        <div class="info">
+                            <p class="jobname-title">Ferdows Textile - IT/Network-Administrator/HelpDesk/Proctor</p>
+                            <p class="job-des">Designing, administrating, maintaining & troubleshooting network
+                                solutions.</p>
+                        </div>
+
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <div class="date">2022 - Present</div>
+                        <p class="edu-title">Web Development</p>
+                    </li>
+                    <li>
+                        <div class="date">Oct 2021</div>
+                        <p class="edu-title">CompTIA Linux+</p>
+                    </li>
+                    <li>
+                        <div class="date">2020 - Present</div>
+                        <p class="edu-title">DevOps Technologies</p>
+                    </li>
+                    <li>
+                        <div class="date">Oct 2020</div>
+                        <p class="edu-title">AWS Certified Cloud Practitioner</p>
+                    </li>
+                    <li>
+                        <div class="date">2016 - 2018</div>
+                        <p class="edu-title">Cisco Routing & Switching</p>
+                    </li>
+                    <li>
+                        <div class="date">2012 - 2014</div>
+                        <p class="edu-title">Windows Server 2012 / Network+</p>
+                    </li>
+                    <li>
+                        <div class="date">2010 - 2012</div>
+                        <p class="edu-title">IT Engineering - VIT College / Pune / India</p>
+                    </li>
+                    <li>
+                        <div class="date">2008 - 2010</div>
+                        <p class="edu-title">English LanguagePune University / Pune / India</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="hobby">
+                <h2>Hobby</h2>
+                <ul>
+                    <li><i class="fa-solid fa-terminal"></i></li>
+                    <li><i class="fa-solid fa-book-open-reader"></i></li>
+                    <li><i class="fa-solid fa-person-swimming"></i></li>
+                    <li><i class="fa-solid fa-film"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
+
+
+<!-- 
+DevOps:
+Docker / K8s
+<i class="fa-brands fa-docker"></i>
+k8s -> svg
+
+Linux / Bash
+<i class="fa-brands fa-linux"></i>
+bash -> svg
+
+Python / AWS / Nginx
+<i class="fa-brands fa-python"></i>
+<i class="fa-brands fa-aws"></i>
+nginx -> svg
+
+Git / GitHub / GitLab
+<i class="fa-brands fa-git-alt"></i>
+<i class="fa-brands fa-github"></i>
+<i class="fa-brands fa-gitlab"></i>
+
+Cisco Networking
+
+Web Development:
+
+JavaScript / React / MongoDB
+<i class="fa-brands fa-square-js"></i>
+<i class="fa-brands fa-react"></i>
+
+
+HTML / CSS / SASS / Bootstrap
+<i class="fa-brands fa-html5"></i>
+<i class="fa-brands fa-css3-alt"></i>
+<i class="fa-brands fa-sass"></i>
+<i class="fa-brands fa-bootstrap"></i>
+
+ -->
