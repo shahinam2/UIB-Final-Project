@@ -105,7 +105,7 @@ h1 {
     background-color: var(--resume-left);
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
-    height: 150vh;
+    /* height: 150vh; */
 }
 
 .profile-picture {
