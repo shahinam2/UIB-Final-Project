@@ -90,7 +90,7 @@ h1 {
 
     display: grid;
 
-    grid-template-columns: 300px, 600px;
+    grid-template-columns: 300px 600px;
     /* grid-template-rows: auto; */
     border-radius: var(--radius);
 
@@ -101,7 +101,7 @@ h1 {
 }
 
 .resume-left {
-    width: 300px;
+    /* width: 300px; */
     background-color: var(--resume-left);
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
@@ -110,9 +110,9 @@ h1 {
 
 .profile-picture {
     /* position: relative; */
+    grid-area: profile-picture;
     width: 100%;
     border-top-left-radius: var(--radius);
-    grid-area: profile-picture;
 }
 
 .profile-picture-circle {
@@ -386,12 +386,10 @@ strong {
 /* --------------------------------------------- */
 .resume-right {
     grid-area: right-content;
-    width: 600px;
     border-top-right-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
     background-color: var(--apple-bg-color);
     padding: 2.5rem;
-    /* border: 1px red solid; */
 }
 
 .about-me,
@@ -483,7 +481,8 @@ strong {
     top: 14px;
     left: -21px;
     width: 2px;
-    height: 82px;
+    /* height: 82px; */
+    height: 108%;
     background: #0bb5f4;
 }
 
@@ -612,7 +611,7 @@ strong {
 /* --------------------------------------------- */
 @media screen and (min-width: 1px) and (max-width: 899px) {
     .resume {
-        all: initial;
+        /* all: initial; */
         width: 100vw;
         margin: 0;
 
@@ -644,9 +643,12 @@ strong {
         margin-top: 20px;
     }
 
+    /* --------------------------------------------- */
+    /* ---------------- Resume Left ---------------- */
+    /* --------------------------------------------- */
     .resume-left {
         width: 100%;
-        min-width: 400px;
+        /* min-width: 400px; */
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         display: flex;
@@ -656,7 +658,7 @@ strong {
     }
 
     .resume-left-content {
-        width: 90vw;
+        width: 100%;
     }
 
     .skill-category {
@@ -680,8 +682,13 @@ strong {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 10px;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .resume-social-mobile li {
+        display: flex;
+        align-content: center;
     }
 
     .resume-left .full-name,
@@ -689,7 +696,18 @@ strong {
         margin-left: 0;
     }
 
+    /* ---------------------------------------------- */
+    /* ---------------- Resume Right ---------------- */
+    /* ---------------------------------------------- */
     .resume-right {
         width: 100%;
+    }
+
+    .hobby ul li {
+        margin-right: 2rem;
+    }
+
+    .hobby ul li:before {
+        display: none;
     }
 }
