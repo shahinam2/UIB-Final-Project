@@ -1,0 +1,591 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --resume-left: #0D324D;
+    --text-color: #F7F0F5;
+    --text-color2: #555555;
+    --icon-color: #F93E1A;
+    --apple-bg-color: #FBFBFD;
+    --border-bottom-color: #00A8E8;
+    --radius: 10px;
+
+    /* Test colors */
+    /* --text2-color: #b1eaff; */
+    --main-content-bg-1: #F7F0F5;
+    --main-content-bg-2: #DECBB7;
+
+}
+
+/* Font usage */
+/* 
+H1, h2, h3: Garamond -> local font
+
+subtitle: Droid-serif -> adobe font
+font-family: droid-serif, serif;
+font-weight: 400;
+font-style: normal;
+
+Droid Serif Bold font-family: droid-serif,serif;
+font-weight: 700;
+font-style: normal;
+
+Droid Serif Italic font-family: droid-serif, serif;
+font-weight: 400;
+font-style: italic;
+
+Droid Serif Bold Italic font-family: droid-serif, serif;
+font-weight: 700;
+font-style: italic;
+
+Full Name: vivaldi -> local
+
+p: Nunito -> google font 
+font-family: 'Nunito',sans-serif;
+*/
+
+/* 
+How to add multiple local fonts: 
+https: //www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+*/
+@font-face {
+    font-family: "garamond";
+    src: url(./font/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+    src: url(./font/Cormorant_Garamond/CormorantGaramond-Italic.ttf);
+    src: url(./font/Cormorant_Garamond/CormorantGaramond-Medium.ttf);
+    src: url(./font/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
+    font-family: "george-sans";
+    src: url(./font/George-sans/GeorgeRegular.ttf);
+    src: url(./font/George-sans/GeorgeItalic.ttf);
+    src: url(./font/George-sans/GeorgeBold.ttf);
+}
+
+@font-face {
+    font-family: "vivaldi";
+    src: url(./font/vivaldi/vivaldi.ttf);
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+/* -------------------------------------------- */
+/* -------------- Resume body ----------------- */
+/* -------------------------------------------- */
+.resume {
+    width: 900px;
+    margin: 50px auto;
+    /* border: 1px solid; */
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    display: grid;
+
+    grid-template-columns: 300px, 600px;
+    /* grid-template-rows: auto; */
+    border-radius: var(--radius);
+
+    grid-template-areas:
+        "profile-picture  right-content"
+        "left-content     right-content"
+    ;
+}
+
+.resume-left {
+    width: 300px;
+    background-color: var(--resume-left);
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    height: 150vh;
+}
+
+.profile-picture {
+    /* position: relative; */
+    width: 100%;
+    border-top-left-radius: var(--radius);
+    grid-area: profile-picture;
+}
+
+/* .profile-picture::after {
+    content: "";
+    position: absolute;
+    background: #8d9e78;
+    width: 100%;
+    height: 30px;
+    bottom: -150px;
+    left: 0;
+    transform: skewY(355deg);
+    z-index: -1;
+} */
+
+.full-name {
+    grid-area: left-content;
+
+    font-family: "vivaldi", sans-serif;
+    font-size: 3.5rem;
+    color: #F7F0F5;
+    /* margin: 0 auto; */
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    /* border: 1px solid red; */
+
+    /* display: none; */
+}
+
+.title {
+    grid-area: full-name;
+    font-size: 1.5rem;
+    color: #F7F0F5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.1rem;
+    margin-left: 3.2rem;
+    /* border: 1px solid; */
+}
+
+
+/* -------------------------------------------- */
+/* -------- Resume content container ---------- */
+/* -------------------------------------------- */
+.resume-left-content {
+    grid-area: left-content;
+    padding: 0 3rem;
+}
+
+/* -------------------------------------------- */
+/* -------- Resume info container ------------- */
+/* -------------------------------------------- */
+.resume-info,
+.resume-skills,
+.resume-social {
+    padding: 2.5rem 0;
+    /* border: 1px solid; */
+    border-bottom: 2px solid var(--border-bottom-color);
+}
+
+.resume-info li {
+    display: flex;
+    align-items: center;
+    /* margin-top: 2rem; */
+    margin-bottom: 1rem;
+    /* margin-left: 3rem; */
+}
+
+.fa-solid,
+.fa-brands {
+    font-size: 2rem;
+    color: var(--icon-color);
+    margin-right: 1rem;
+}
+
+.data,
+a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.data,
+a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a09a9e;
+}
+
+.svg-icon {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+
+/* -------------------------------------------- */
+/* ------------ Resume-skills ----------------- */
+/* -------------------------------------------- */
+.resume-skills h2 {
+    font-family: "droid-serif", serif;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    padding-bottom: 1rem;
+}
+
+.resume-skills h3 {
+    font-family: "droid-serif", serif;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.resume-skills .skill-category {
+    padding-left: 2rem;
+}
+
+.resume-skills .skill-category1 {
+    margin-bottom: 1.5rem;
+}
+
+.resume-skills .skill-category img {
+    margin-bottom: 1rem;
+}
+
+#docker-logo {
+    width: 20rem;
+}
+
+#k8s-logo {
+    width: 20rem;
+}
+
+#linux-logo {
+    width: 5rem;
+    display: inline;
+    margin-right: 2rem;
+}
+
+#bash-logo {
+    width: 13rem;
+    display: inline;
+}
+
+#python-logo {
+    width: 5rem;
+    display: inline;
+    margin-right: 1rem;
+}
+
+#aws-logo {
+    width: 7rem;
+    display: inline;
+    margin-right: 1rem;
+}
+
+#nginx-logo {
+    width: 13rem;
+}
+
+#git-logo-clean {
+    width: 5rem;
+    display: inline;
+    margin-right: 1rem;
+}
+
+#github-logo {
+    width: 4.5rem;
+    display: inline;
+    margin-right: 1rem;
+
+}
+
+#gitlab-logo-clean {
+    width: 5rem;
+}
+
+#cisco-logo {
+    width: 8rem;
+}
+
+#javascript-logo {
+    width: 4rem;
+    margin-right: 1rem;
+
+}
+
+#react-logo {
+    width: 4.5rem;
+    margin-right: 0.9rem;
+}
+
+#mongodb-logo {
+    width: 4rem;
+}
+
+#html-logo-clean {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+#css-logo-clean {
+    width: 4.2rem;
+    margin-right: 1rem;
+}
+
+#sass-logo {
+    width: 6rem;
+}
+
+.resume-skills p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+strong {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+/* --------------------------------------------- */
+/* ------------ Resume-Socials ----------------- */
+/* --------------------------------------------- */
+.resume-social {
+    border-bottom: none;
+}
+
+.resume-social li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.resume-social h2 {
+    font-family: "droid-serif", serif;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    padding-bottom: 1rem;
+}
+
+.resume-social a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+/* --------------------------------------------- */
+/* --------- Resume right container ------------ */
+/* --------------------------------------------- */
+.resume-right {
+    grid-area: right-content;
+    width: 600px;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    background-color: var(--apple-bg-color);
+    padding: 2.5rem;
+    /* border: 1px red solid; */
+}
+
+.about-me,
+.work-experience,
+.education,
+.hobby {
+    padding: 2.5rem 0;
+    border-bottom: 2px solid var(--border-bottom-color);
+}
+
+/* --------------------------------------------- */
+/* -------------- About me --------------------- */
+/* --------------------------------------------- */
+.about-me h2 {
+    font-family: "garamond", sans-serif;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    /* font-weight: bold; */
+}
+
+.about-me p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--text2-color);
+}
+
+/* --------------------------------------------- */
+/* ---------- Work Experience ------------------ */
+/* --------------------------------------------- */
+.work-experience h2 {
+    font-family: "garamond", sans-serif;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    /* font-weight: ; */
+}
+
+.work-experience li {
+    list-style-type: none;
+}
+
+.work-experience .date {
+    font-family: "droid-serif", serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text2-color);
+}
+
+.work-experience .info {
+    margin-bottom: 1.5rem;
+}
+
+.work-experience .jobname-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--text2-color);
+}
+
+.work-experience .job-des {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: var(--text2-color);
+}
+
+.work-experience ul {
+    padding-left: 4rem;
+}
+
+.work-experience li {
+    position: relative;
+}
+
+.work-experience li:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #0bb5f4;
+}
+
+.work-experience li:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 82px;
+    background: #0bb5f4;
+}
+
+/* --------------------------------------------- */
+/* ------------- Education --------------------- */
+/* --------------------------------------------- */
+.education h2 {
+    font-family: "garamond", sans-serif;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.education li {
+    list-style-type: none;
+}
+
+.education .date {
+    font-family: "droid-serif", serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text2-color);
+}
+
+.education .edu-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--text2-color);
+}
+
+.education ul {
+    padding-left: 4rem;
+}
+
+.education li {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.education li:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #0bb5f4;
+}
+
+.education li:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 61px;
+    background: #0bb5f4;
+}
+
+/* --------------------------------------------- */
+/* ----------------- Hobby --------------------- */
+/* --------------------------------------------- */
+.hobby {
+    border-bottom: none;
+    margin: 0 3rem;
+}
+
+.hobby h2 {
+    font-family: "garamond", sans-serif;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.hobby ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hobby li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0bb5f4;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    position: relative;
+    color: #0bb5f4;
+}
+
+.hobby ul li:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -59px;
+    width: 58px;
+    height: 2px;
+    background: #0bb5f4;
+}
+
+.hobby li i {
+    font-size: 3.5rem;
+    margin: auto;
+}
+
+.hobby ul li:last-child:before {
+    display: none;
+}
