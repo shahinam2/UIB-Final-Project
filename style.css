@@ -72,6 +72,7 @@ https: //www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
 @font-face {
     font-family: "vivaldi";
     src: url(./font/vivaldi/vivaldi.ttf);
+    src: url(./font/vivaldi/VIVALDII.woff);
 }
 
 h1 {
