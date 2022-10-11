@@ -24,10 +24,20 @@
 }
 
 body {
-    background: #2c2d44;
-    background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
-    background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
-    background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    animation: animateBg 40s linear infinite;
+    background-image: linear-gradient(0deg, #64b3d9, #208ea2, #498ada, #5b73df, #897ed3, #cf5c5c, #c19b4a);
+    background-size: 100% 1100%;
+    overflow-x: hidden;
+}
+
+@keyframes animateBg {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 /* Font usage */
@@ -108,11 +118,13 @@ h1 {
         "left-content     right-content"
     ;
 
-    background-color: var(--resume-left);
+    /* background-color: var(--resume-left); */
+    /* background-color: transparent; */
 }
 
 .resume-left {
-    /* background-color: var(--resume-left); */
+    background-color: var(--resume-left);
+    /* background-color: transparent; */
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
     height: 100%;
@@ -164,7 +176,8 @@ h1 {
 /* -------------------------------------------- */
 .resume-info,
 .resume-skills,
-.resume-social {
+.resume-social,
+.resume-contact-me {
     padding: 2.5rem 0;
     /* border: 1px solid; */
     border-bottom: 2px solid var(--border-bottom-color);
@@ -264,7 +277,7 @@ strong {
 /* ------------ Resume-Socials ----------------- */
 /* --------------------------------------------- */
 .resume-social {
-    border-bottom: none;
+    /* border-bottom: none; */
     display: flex;
     flex-direction: column;
 }
@@ -295,6 +308,66 @@ strong {
     font-family: 'Nunito', sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
+}
+
+
+/* --------------------------------------------- */
+/* -------------- Contact Me ------------------- */
+/* --------------------------------------------- */
+.resume-contact-me h2 {
+    font-family: "droid-serif", serif;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    padding-bottom: 2.5rem;
+}
+
+.resume-contact-me .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#input-name,
+#input-email,
+#input-subject,
+#input-message,
+#input-submit {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    height: 3rem;
+    background: #f5f3f3;
+    font-family: nunito, sans-serif;
+    color: rgb(231, 228, 228);
+    padding-left: 1rem;
+}
+
+#input-message {
+    height: 9rem;
+    padding-top: 0.5rem;
+}
+
+#input-submit {
+    background: var(--border-bottom-color);
+    color: #fff;
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+#input-submit:hover {
+    /* background-color: #959799; */
+    cursor: pointer;
+    scale: 1.02;
+}
+
+#input-submit:active {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+    scale: 1;
+}
+
+.resume-contact-me .contact-me-img {
+    border-radius: 10px;
 }
 
 
@@ -573,7 +646,7 @@ li {
 
         grid-template-columns: auto;
         grid-template-rows: auto;
-        border-radius: var(--radius);
+        border-radius: 0;
 
         grid-template-areas:
             "profile-picture"
@@ -582,14 +655,20 @@ li {
         ;
 
         align-items: center;
-        border-radius: none;
+        border-radius: 0;
     }
 
     .profile-picture {
         display: none;
     }
 
+    .full-name,
+    .title {
+        margin-left: 0;
+    }
+
     .profile-picture-circle {
+        grid-area: profile-picture;
         display: initial;
         max-width: 260px;
         margin-top: 20px;
@@ -599,24 +678,49 @@ li {
     /* ---------------- Resume Left ---------------- */
     /* --------------------------------------------- */
     .resume-left {
+        grid-area: left-content;
+
         width: 100%;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        /* border-top-left-radius: 0; */
+        /* border-bottom-left-radius: 0; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        border-radius: 0;
     }
 
     .resume-left-content {
         width: 100%;
     }
 
+    .contact-me-img {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #input-name,
+    #input-email,
+    #input-subject,
+    #input-message,
+    #input-submit {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
     /* ---------------------------------------------- */
     /* ---------------- Resume Right ---------------- */
     /* ---------------------------------------------- */
     .resume-right {
+        grid-area: right-content;
+
         width: 100%;
+        border-radius: 0;
+
+        /* display: none; */
     }
 
     .hobby ul li {
