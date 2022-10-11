@@ -9,3 +9,5 @@
 - [x] Resize the skills SVG files
 - [] Add the rectangle to the buttom of the profile picture
 - [x] Apply DRY (Partially applied)
+- [] Add particle background
+- [] Add a contact me form under social section

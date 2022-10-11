@@ -62,6 +62,7 @@ https: //www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
     src: url(./font/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
 }
 
+/* Experimental font */
 @font-face {
     font-family: "george-sans";
     src: url(./font/George-sans/GeorgeRegular.ttf);
@@ -99,10 +100,12 @@ h1 {
         "profile-picture  right-content"
         "left-content     right-content"
     ;
+
+    background-color: var(--resume-left);
 }
 
 .resume-left {
-    background-color: var(--resume-left);
+    /* background-color: var(--resume-left); */
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
     height: 100%;
