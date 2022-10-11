@@ -23,6 +23,13 @@
 
 }
 
+body {
+    background: #2c2d44;
+    background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+}
+
 /* Font usage */
 /* 
 H1, h2, h3: Garamond -> local font
@@ -56,24 +63,24 @@ https: //www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
 */
 @font-face {
     font-family: "garamond";
-    src: url(./font/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
-    src: url(./font/Cormorant_Garamond/CormorantGaramond-Italic.ttf);
-    src: url(./font/Cormorant_Garamond/CormorantGaramond-Medium.ttf);
-    src: url(./font/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+    src: url(../font/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+    src: url(../font/Cormorant_Garamond/CormorantGaramond-Italic.ttf);
+    src: url(../font/Cormorant_Garamond/CormorantGaramond-Medium.ttf);
+    src: url(../font/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
 }
 
 /* Experimental font */
 @font-face {
     font-family: "george-sans";
-    src: url(./font/George-sans/GeorgeRegular.ttf);
+    src: url(../font/George-sans/GeorgeRegular.ttf);
     src: url(./font/George-sans/GeorgeItalic.ttf);
-    src: url(./font/George-sans/GeorgeBold.ttf);
+    src: url(../font/George-sans/GeorgeBold.ttf);
 }
 
 @font-face {
     font-family: "vivaldi";
-    src: url(./font/vivaldi/vivaldi.ttf);
-    src: url(./font/vivaldi/VIVALDII.woff);
+    src: url(../font/vivaldi/vivaldi.ttf);
+    src: url(../font/vivaldi/VIVALDII.woff);
 }
 
 h1 {

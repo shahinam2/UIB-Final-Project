@@ -362,7 +362,8 @@
             });
     })();
 
-particleground(document.getElementById("particles-foreground"), {
+// particleground(document.getElementById("particles-foreground"), {
+particleground(document.body, {
     dotColor: "rgba(255, 255, 255, 1)",
     lineColor: "rgba(255, 255, 255, 0.05)",
     minSpeedX: 0.3,
@@ -376,7 +377,8 @@ particleground(document.getElementById("particles-foreground"), {
     particleRadius: 4 // Dot size
 });
 
-particleground(document.getElementById("particles-background"), {
+// particleground(document.getElementById("particles-background"), {
+particleground(document.body, {
     dotColor: "rgba(255, 255, 255, 0.5)",
     lineColor: "rgba(255, 255, 255, 0.05)",
     minSpeedX: 0.075,
