@@ -118,12 +118,12 @@ h1 {
         "left-content     right-content"
     ;
 
-    /* background-color: var(--resume-left); */
+    background-color: var(--resume-left);
     /* background-color: transparent; */
 }
 
 .resume-left {
-    background-color: var(--resume-left);
+    /* background-color: var(--resume-left); */
     /* background-color: transparent; */
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
