@@ -24,10 +24,14 @@
 }
 
 body {
-    animation: animateBg 40s linear infinite;
+    /* animation: animateBg 40s linear infinite;
     background-image: linear-gradient(0deg, #64b3d9, #208ea2, #498ada, #5b73df, #897ed3, #cf5c5c, #c19b4a);
     background-size: 100% 1100%;
-    overflow-x: hidden;
+    overflow-x: hidden; */
+    background: mix(#3f3251, #002025, 70%);
+    background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
 }
 
 @keyframes animateBg {
@@ -106,7 +110,10 @@ h1 {
     width: 900px;
     margin: 50px auto;
 
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    /* box-shadow: rgba(221, 218, 218, 0.16) 0px 3px 6px, rgba(231, 228, 228, 0.23) 0px 3px 6px; 
+    */
+    /* box-shadow: rgba(163, 163, 163, 0.3) 0px 1px 2px 0px, rgba(196, 195, 195, 0.15) 0px 1px 3px 1px; */
 
     display: grid;
     grid-template-columns: 300px 600px;
