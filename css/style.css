@@ -3,8 +3,6 @@
     font-size: 62.5%;
     margin: 0;
     padding: 0;
-    /* -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; */
 }
 
 :root {
@@ -20,14 +18,9 @@
     /* --text2-color: #b1eaff; */
     --main-content-bg-1: #F7F0F5;
     --main-content-bg-2: #DECBB7;
-
 }
 
 body {
-    /* animation: animateBg 40s linear infinite;
-    background-image: linear-gradient(0deg, #64b3d9, #208ea2, #498ada, #5b73df, #897ed3, #cf5c5c, #c19b4a);
-    background-size: 100% 1100%;
-     */
     overflow-x: hidden;
     background: mix(#3f3251, #002025, 70%);
     background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
@@ -111,11 +104,6 @@ h1 {
     width: 900px;
     margin: 50px auto;
 
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
-    /* box-shadow: rgba(221, 218, 218, 0.16) 0px 3px 6px, rgba(231, 228, 228, 0.23) 0px 3px 6px; 
-    */
-    /* box-shadow: rgba(163, 163, 163, 0.3) 0px 1px 2px 0px, rgba(196, 195, 195, 0.15) 0px 1px 3px 1px; */
-
     display: grid;
     grid-template-columns: 300px 600px;
     grid-template-rows: 100%;
@@ -127,12 +115,9 @@ h1 {
     ;
 
     background-color: var(--resume-left);
-    /* background-color: transparent; */
 }
 
 .resume-left {
-    /* background-color: var(--resume-left); */
-    /* background-color: transparent; */
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
     height: 100%;
@@ -187,7 +172,6 @@ h1 {
 .resume-social,
 .resume-contact-me {
     padding: 2.5rem 0;
-    /* border: 1px solid; */
     border-bottom: 2px solid var(--border-bottom-color);
 }
 
@@ -285,7 +269,6 @@ strong {
 /* ------------ Resume-Socials ----------------- */
 /* --------------------------------------------- */
 .resume-social {
-    /* border-bottom: none; */
     display: flex;
     flex-direction: column;
 }
@@ -364,7 +347,6 @@ strong {
 }
 
 #input-submit:hover {
-    /* background-color: #959799; */
     cursor: pointer;
     scale: 1.02;
 }
@@ -420,7 +402,6 @@ li {
     color: var(--text2-color);
 }
 
-/* The followings are all div elements. */
 .jobname-title,
 .date,
 .about-me-style {
@@ -432,7 +413,7 @@ li {
 /* --------------------------------------------- */
 /* -------------- About me --------------------- */
 /* --------------------------------------------- */
-
+/* a partial DRY made this section empty. */
 
 
 
@@ -492,7 +473,6 @@ li {
     top: 14px;
     left: -21px;
     width: 2px;
-    /* height: 82px; */
     height: 108%;
     background: #0bb5f4;
 }
@@ -664,10 +644,6 @@ li {
 
         align-items: center;
         border-radius: 0;
-
-        /* overflow-x: hidden; */
-        /* border: 10px solid red; */
-        /* overflow: hidden; */
     }
 
     .profile-picture {
@@ -693,8 +669,7 @@ li {
         grid-area: left-content;
 
         width: 100%;
-        /* border-top-left-radius: 0; */
-        /* border-bottom-left-radius: 0; */
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -737,8 +712,6 @@ li {
 
         width: 100%;
         border-radius: 0;
-
-        /* display: none; */
     }
 
     .hobby ul li {

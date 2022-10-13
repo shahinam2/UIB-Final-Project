@@ -59,3 +59,7 @@ Well that was not what I planned! but I had to end the project with a compromise
 [Nutanix Loading Screen](https://codepen.io/kenchen/pen/vYwvbZ?editors=1100)
 
 But I couldn’t make it work properly, because it is written in JavaScript. but I will revisit this part of the design when I know more about JS.
+
+### What was the most important lesson you learned by doing this project?
+
+If you want to apply the DRY principle, apply it while writting the code and don't postpone it to when the project is done. Applying DRY at the end of project is really difficult and can actually break the code.
