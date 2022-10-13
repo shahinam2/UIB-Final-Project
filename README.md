@@ -38,7 +38,7 @@ Photos:
 
 ---
 
-### Q/A:
+## Q/A:
 
 ### Why did I choose to do a Resume and not something more fancy?
 
