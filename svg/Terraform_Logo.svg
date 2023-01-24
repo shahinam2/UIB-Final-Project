@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <path class="rect-dark" fill="#4040B2" d="M 99.518 50.075 L 99.518 97.353 L 140.477 73.726 L 140.477 26.399 L 99.518 50.075 Z" style=""/>
+  <path class="rect-light" fill="#5C4EE5" d="M 54.063 26.399 L 95.022 50.075 L 95.022 97.353 L 54.063 73.701 L 54.063 26.399 Z" style=""/>
+  <path class="rect-light" fill="#5C4EE5" d="M 8.609 0 L 8.609 47.303 L 49.568 70.954 L 49.568 23.651 L 8.609 0 Z M 54.063 126.199 L 95.022 149.85 L 95.022 102.547 L 54.063 78.896 L 54.063 126.199 Z" style=""/>
+</svg>
