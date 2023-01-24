@@ -6,10 +6,6 @@ Full Screenshot:
 
 ![resume-project-screeshot.png](./img/resume-project-screeshot.png)
 
-First thing first!
-
-- Don’t open my resume website with Firefox. because it works best on chrome only!
-
 What are the used resources:
 
 Layout:
