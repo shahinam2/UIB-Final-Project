@@ -1,6 +1,6 @@
 # DCI User Interface Basics Final Project
 
-[Live Version](http://shahin.thefabwebdev.com/)
+[Live Version](https://shahin-hemmati.me/)
 
 Full Screenshot:
 
