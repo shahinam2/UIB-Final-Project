@@ -1,6 +1,6 @@
 # DCI User Interface Basics Final Project
 
-[Live Version](https://shahin-hemmati.me/)
+[Live Version](https://shahinam2.github.io/UIB-Final-Project/)
 
 Full Screenshot:
 
